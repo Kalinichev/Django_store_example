@@ -4,9 +4,9 @@ from .models import ProductCategory, Product
 
 content = {
     'main_menu': [
-        {'href': 'main', 'name': 'домой'},
-        {'href': 'products', 'name': 'продукты'},
-        {'href': 'contact', 'name': 'контакты'},
+        {'href': 'shop:main', 'name': 'домой'},
+        {'href': 'shop:products', 'name': 'продукты'},
+        {'href': 'shop:contact', 'name': 'контакты'},
     ]
 
 }
