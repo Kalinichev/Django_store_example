@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from .models import ProductCategory, Product
+
 
 content = {
     'main_menu': [
@@ -12,6 +14,8 @@ content = {
 
 def main(request):
     title = 'Главная'
+
+    products = Product.objects.all()
 
     own_content = {
         'title': title,
