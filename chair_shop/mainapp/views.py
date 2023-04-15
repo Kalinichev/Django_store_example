@@ -26,7 +26,7 @@ def main(request):
     return render(request, 'mainapp/index.html', content)
 
 
-def products(request):
+def products(request, pk=None):
     links_menu = [
         {'href': 'products_all', 'name': 'все'},
         {'href': 'products_home', 'name': 'дом'},
